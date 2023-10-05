@@ -26,3 +26,9 @@ hs_err_pid*
 
 .settings/
 target/
+target/classes/application.properties
+/target/
+*.prefs
+.project
+.classpath
+*.md
