@@ -22,7 +22,7 @@ import lombok.AllArgsConstructor;
 @EnableWebSecurity
 public class SpringSecurityConfig {
 
-	private JwtAuthenticationFilter filter;
+	private JwtRequestFilter filter;
 	private JwtAuthenticationEntryPoint entryPoint;
 	private CustomUserDetailsService customUserDetailsService;
 	
