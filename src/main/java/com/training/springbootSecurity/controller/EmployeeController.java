@@ -10,7 +10,7 @@ import com.training.springbootSecurity.model.Employee;
 @RestController
 public class EmployeeController {
 
-	@GetMapping("getAllEmployee")
+	@GetMapping("/getAllEmployee")
 	public List<Employee> getAllEmployee(){
 		return List.of(new Employee("first","name"),new Employee("last","name"));
 	}
@@ -18,5 +18,10 @@ public class EmployeeController {
 	@GetMapping("/")
 	public List<Employee> getRoot(){
 		return List.of();
+	}
+	
+	@GetMapping("/public")
+	public String getPublic(){
+		return "Welcome to public endpoint";
 	}
 }
