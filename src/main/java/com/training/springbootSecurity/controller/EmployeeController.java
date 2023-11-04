@@ -12,7 +12,10 @@ public class EmployeeController {
 
 	@GetMapping("getAllEmployee")
 	public List<Employee> getAllEmployee(){
-		return List.of(new Employee("first","name"),new Employee("last","name"));
+		return List.of(
+				new Employee("first","name"),
+				new Employee("last","name")
+				);
 	}
 	
 	@GetMapping("/")
